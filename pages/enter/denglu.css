@@ -1,0 +1,388 @@
+.dlheader {
+  width: 7.5rem;
+  height: 4.3rem;
+  background: #29a6dc; }
+  .dlheader .dlimg {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: yellow;
+    position: absolute;
+    top: 0.16rem;
+    left: 0.20rem;
+    background: url(./images/shujia/b16.png);
+    background-size: 0.5rem 0.55rem; }
+  .dlheader .dlzi {
+    font-size: 0.2rem;
+    color: white;
+    line-height: 0.6rem;
+    text-align: center; }
+  .dlheader .dllogo {
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 20px;
+    color: white; }
+
+.dldimension {
+  width: 7.5rem;
+  height: 14.4rem;
+  background: #f2f2f2; }
+  .dldimension .dlone {
+    width: 7.5rem;
+    height: 3rem; }
+    .dldimension .dlone .dlzi {
+      color: #000000;
+      font-size: 13px;
+      line-height: 3rem;
+      text-align: center; }
+    .dldimension .dlone .dlname {
+      color: #000000;
+      font-size: 13px;
+      margin-top: -1rem;
+      margin-right: 0.2rem;
+      text-align: right; }
+  .dldimension .dlxuehao {
+    width: 6.2rem;
+    height: 0.9rem;
+    border: 1px solid #29a6dc;
+    background: white;
+    border-radius: 0.3rem;
+    margin-left: 0.65rem;
+    margin-bottom: 0.4rem;
+    color: #CCCCCC;
+    text-align: center;
+    line-height: 0.9rem; }
+    .dldimension .dlxuehao .dltu {
+      width: 0.5rem;
+      height: 0.5rem;
+      float: left;
+      margin-left: 0.2rem;
+      margin-top: 0.2rem;
+      background: url(./images/denglu/a3.png);
+      background-size: 0.5rem 0.5rem; }
+  .dldimension .dlpassword {
+    width: 6.2rem;
+    height: 0.9rem;
+    border: 1px solid #29a6dc;
+    background: white;
+    border-radius: 0.3rem;
+    margin-left: 0.65rem;
+    margin-bottom: 0.4rem;
+    color: #CCCCCC;
+    text-align: center;
+    line-height: 0.9rem; }
+    .dldimension .dlpassword .dltu {
+      width: 0.5rem;
+      height: 0.5rem;
+      float: left;
+      margin-left: 0.2rem;
+      margin-top: 0.2rem;
+      background: url(./images/denglu/a5.png);
+      background-size: 0.5rem 0.5rem; }
+  .dldimension .dlzhao {
+    width: 5.3rem;
+    height: 0.3rem;
+    margin-left: 1.1rem; }
+    .dldimension .dlzhao li:nth-child(1) {
+      width: 0.3rem;
+      height: 0.3rem;
+      float: left;
+      background: url(./images/denglu/a6.png);
+      background-size: 0.3rem 0.3rem; }
+    .dldimension .dlzhao li:nth-child(2) a{
+      color: #666666;
+      font-size: 0.1rem;
+      float: left;
+      margin-left: 0.05rem; }
+    .dldimension .dlzhao li:nth-child(3) a{
+      color: #666666;
+      font-size: 0.1rem;
+      float: right; }
+    .dldimension .dlzhao li:nth-child(4) {
+      width: 0.5rem;
+      height: 0.5rem;
+      float: right;
+      background: url(./images/denglu/a3.png);
+      background-size: 0.3rem 0.3rem;
+      background-repeat: no-repeat; }
+  .dldimension .dldianji {
+    width: 5.65rem;
+    height: 0.7rem;
+    margin-top: 1.5rem;
+    margin-left: 0.9rem;
+    background: #29A6DC;
+    border-radius: 30px; }
+    .dldimension .dldianji .li:nth-child(1) {
+      width: 0.05rem;
+      height: 0.05rem;
+      background: white;
+      margin-top: 0.35rem;
+      float: left;
+      margin-left: 0.3rem; }
+    .dldimension .dldianji .li:nth-child(2) {
+      width: 0.05rem;
+      height: 0.05rem;
+      background: white;
+      margin-top: 0.35rem;
+      float: right;
+      margin-right: 0.3rem; }
+    .dldimension .dldianji .li:nth-child(3) {
+      color: white;
+      line-height: 0.7rem;
+      text-align: center;
+      font-size: 0.3rem; }
+
+.zcheader {
+  width: 7.5rem;
+  height: 2.5rem;
+  background: #29a6dc; }
+  .zcheader .dlimg {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: yellow;
+    position: absolute;
+    top: 0.16rem;
+    left: 0.20rem;
+    background: url(./images/shujia/b16.png);
+    background-size: 0.5rem 0.55rem; }
+  .zcheader .dlzi {
+    font-size: 0.2rem;
+    color: white;
+    line-height: 0.6rem;
+    text-align: center; }
+  .zcheader .dllogo {
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 20px;
+    color: white; }
+
+.zcup {
+  width: 7.5rem;
+  height: 0.6rem; }
+
+.zcxuehao {
+  width: 6.2rem;
+  height: 0.9rem;
+  border: 1px solid #29a6dc;
+  background: white;
+  border-radius: 0.3rem;
+  margin-left: 0.65rem;
+  margin-bottom: 0.4rem;
+  color: #CCCCCC;
+  text-align: center;
+  line-height: 0.9rem; }
+  .zcxuehao .dltu {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    background: url(./images/denglu/a3.png);
+    background-size: 0.5rem 0.5rem; }
+
+.zcpassword {
+  width: 6.2rem;
+  height: 0.9rem;
+  border: 1px solid #29a6dc;
+  background: white;
+  border-radius: 0.3rem;
+  margin-left: 0.65rem;
+  margin-bottom: 0.4rem;
+  color: #CCCCCC;
+  text-align: center;
+  line-height: 0.9rem; }
+  .zcpassword .dltu {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    background: url(./images/denglu/a3.png);
+    background-size: 0.5rem 0.5rem; }
+
+.zcpassword:nth-child(3) .dltu {
+  background: url(./images/denglu/a5.png);
+  background-size: 0.5rem 0.5rem; }
+
+.zcpassword:nth-child(4) .dltu {
+  background: url(./images/denglu/a5.png);
+  background-size: 0.5rem 0.5rem; }
+
+.zcpassword:nth-child(5) .dltu {
+  background: url(./images/denglu/a4.png);
+  background-size: 0.5rem 0.5rem; }
+
+.zcyan {
+  width: 6.2rem;
+  height: 0.9rem;
+  margin-left: 0.65rem;
+  margin-bottom: 0.4rem; }
+  .zcyan .zcleft {
+    float: left;
+    width: 3.86rem;
+    height: 0.9rem;
+    border: 1px solid #29a6dc;
+    background: white;
+    border-radius: 0.3rem; }
+    .zcyan .zcleft li:nth-child(1) {
+      color: #29A6DC;
+      text-align: center;
+      line-height: 0.5rem; }
+    .zcyan .zcleft li:nth-child(2) {
+      color: #CCCCCC;
+      text-align: center;
+      line-height: 0.3rem;
+      font-size: 0.12rem; }
+  .zcyan .zcright {
+    float: right;
+    width: 2.05rem;
+    height: 0.9rem;
+    border: 1px solid #29a6dc;
+    background: white;
+    border-radius: 0.3rem;
+    color: #CCCCCC;
+    text-align: center;
+    line-height: 0.9rem; }
+
+.zcdianji {
+  width: 5.65rem;
+  height: 0.7rem;
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+  background: #29A6DC;
+  border-radius: 30px; }
+  .zcdianji .li:nth-child(1) {
+    width: 0.05rem;
+    height: 0.05rem;
+    background: white;
+    margin-top: 0.35rem;
+    float: left;
+    margin-left: 0.3rem; }
+  .zcdianji .li:nth-child(2) {
+    width: 0.05rem;
+    height: 0.05rem;
+    background: white;
+    margin-top: 0.35rem;
+    float: right;
+    margin-right: 0.3rem; }
+  .zcdianji .li:nth-child(3) {
+    color: white;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.3rem; }
+
+.xydianji {
+  width: 5.65rem;
+  height: 0.7rem;
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+  background: #29A6DC;
+  border-radius: 30px;
+      text-align: center; }
+  .xydianji .li:nth-child(1) {
+    width: 0.05rem;
+    height: 0.05rem;
+    background: white;
+    margin-top: 0.35rem;
+    float: left;
+    margin-left: 0.3rem; }
+  .xydianji .li:nth-child(2) {
+    width: 0.05rem;
+    height: 0.05rem;
+    background: white;
+    margin-top: 0.35rem;
+    float: right;
+    margin-right: 0.3rem; }
+  .xydianji .li:nth-child(3) a{
+    color: white;
+    line-height: 0.7rem;
+    font-size: 0.3rem; }
+
+.xyzhao {
+  width: 5.3rem;
+  height: 0.3rem;
+  margin-left: 1.1rem; }
+  .xyzhao li:nth-child(1) {
+    width: 0.3rem;
+    height: 0.3rem;
+    float: left;
+    background-size: 0.3rem 0.3rem; }
+  .xyzhao li:nth-child(2) {
+    color: #666666;
+    font-size: 0.1rem;
+    float: left;
+    margin-left: 0.05rem; }
+  .xyzhao li:nth-child(3) a{
+    color: #666666;
+    font-size: 0.1rem;
+    float: right; }
+  .xyzhao li:nth-child(4) {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: right;
+    background: url(./images/denglu/a3.png);
+    background-size: 0.3rem 0.3rem;
+    background-repeat: no-repeat; }
+
+.xypassword {
+  width: 6.2rem;
+  height: 0.9rem;
+  border: 1px solid #29a6dc;
+  background: white;
+  border-radius: 0.3rem;
+  margin-left: 0.65rem;
+  margin-bottom: 0.4rem;
+  color: #CCCCCC;
+  text-align: center;
+  line-height: 0.9rem; }
+  .xypassword .dltu {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    background: url(./images/denglu/a4.png);
+    background-size: 0.5rem 0.5rem; }
+
+.wcheader {
+  width: 7.5rem;
+  height: 4.3rem;
+  background: #29a6dc; }
+  .wcheader .dlimg {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: yellow;
+    position: absolute;
+    top: 0.16rem;
+    left: 0.20rem;
+    background: url(./images/shujia/b16.png);
+    background-size: 0.5rem 0.55rem; }
+  .wcheader .dlzi {
+    font-size: 0.2rem;
+    color: white;
+    line-height: 0.6rem;
+    text-align: center; }
+  .wcheader .dllogo {
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 20px;
+    color: white; }
+
+.wcxuehao {
+  width: 6.2rem;
+  height: 0.9rem;
+  border: 1px solid #29a6dc;
+  background: white;
+  border-radius: 0.3rem;
+  margin-left: 0.65rem;
+  margin-bottom: 0.4rem;
+  color: #CCCCCC;
+  text-align: center;
+  line-height: 0.9rem; }
+  .wcxuehao .dltu {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    background: url(./images/denglu/a5.png);
+    background-size: 0.5rem 0.5rem; }

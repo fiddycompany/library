@@ -1,0 +1,170 @@
+.header{
+    width: 7.5rem;
+    height:1.1rem;
+    background: #29a6dc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .zi{
+        font-size: 22px;
+        color: white;
+        text-align: center;
+    }
+    .xian{
+        width:50px;
+        height: 2px;
+        background: white;
+       position: absolute;
+       top: 30px;
+       left: 0;
+       right: 0;
+       margin: auto;
+       li{
+           width: 5px;
+           height: 5px;
+           background: white;
+           border-radius: 50%;
+       }
+       li:nth-child(1){
+           float: left;
+           margin-top: -1px;
+       }
+       li:nth-child(2){
+           float: right;
+           margin-top: -1px;
+       }
+    }
+    #sjMY{
+        color: white;
+        font-size: 8px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sjimg{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        margin: auto;
+        right: 20px;
+        background: url(../images/shujia/b5.png);
+//      background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+.sjbotton{
+    width: 7.5rem;
+    height: 1.1rem;
+    border: 1px solid #ccc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    li{
+        float: left;
+        width: 33.3%;
+        height: 100%;
+    }
+    .img{
+           width: 35px;
+           height:35px;
+           background: blue;
+           position: absolute;
+           margin: auto;
+           left: 0;
+           right: 0;
+        }
+    li:nth-child(1){
+        background: #111723;
+        border-right: 2px solid #CCCCCC;
+        box-sizing: border-box;           
+        text-align: center;
+        font-size: 10px;
+        color: white;
+        line-height: 1.7rem;
+        .img{
+            background:url(../images/shujia/b12.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    li:nth-child(2){
+        background: #151C2B;
+        border-right: 2px solid #CCCCCC;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 10px;
+        color: #383C45;
+        line-height: 1.7rem;
+        .img{
+            background:url(../images/shujia/b14.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    li:nth-child(3){
+        background: #151C2B;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 10px;
+        color: #383C45;
+        line-height: 1.7rem;
+        .img{
+            background:url(../images/shujia/b13.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+//书架2
+.sjheader{
+    width: 7.5rem;
+    height:1.1rem;
+    background: #29a6dc;
+    position: fixed;
+    top: 0;
+    left: 0;
+.sjsou{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width:4rem ;
+    height: 0.5rem;
+    background:white;
+    border-radius: 25px;
+    color:#D1D1D1 ;
+    font-size: 13px;
+    line-height: 0.5rem;
+    .suo{
+        width: 0.5rem;
+        height: 0.5rem;
+        float: left;
+        margin-left: 3px;
+        background: url(../images/shujia/12sou.png);
+        background-size:0.35rem 0.5rem;
+        background-repeat: no-repeat;
+    }
+}
+.sjleft{
+   float: left;
+    width: 0.7rem;
+    height: 0.7rem;
+     margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    background: url(../images/shujia/b16.png);
+    background-size:0.6rem 0.7rem;
+    background-repeat: no-repeat;
+}
+.sjright{
+    float: right;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.3rem;
+    margin-top: 0.2rem;
+    background: url(../images/shujia/b15.png);
+    background-size:0.9rem 0.7rem;
+}
+}

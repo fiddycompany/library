@@ -1,0 +1,174 @@
+/*去掉标签的默认样式*/
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  font-family: "微软雅黑",sans-serif;
+  box-sizing: border-box;
+  position: relative;
+}
+
+img {
+  border: none;
+}
+.bigbox{
+     width:7.5rem;
+     height:auto;
+     position:absolute;
+     top:1.1rem;
+}
+.fu {
+  width: 100%;
+  height: 3.87rem;
+}
+
+.fu .fu1 {
+  width: 100%;
+  height: 3.72rem;
+}
+
+.fu .fu1 .fu11 {
+  width: 2.97rem;
+  height: 100%;
+  float: left;
+}
+
+.fu .fu1 .fu11 .fu11tu {
+  width: 2.46rem;
+  height: 3.5rem;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.fu .fu1 .fu11 .fu11tu img {
+  width: 100%;
+}
+
+.fu .fu1 .fu12 {
+  width: 4.53rem;
+  height: 100%;
+  float: left;
+}
+
+.fu .fu1 .fu12 .fu12top {
+  width: 100%;
+  height: 0.68rem;
+  box-sizing: border-box;
+  padding-top: 0.25rem;
+  line-height: 0.43rem;
+  color: #292929;
+}
+
+.fu .fu1 .fu12 .fu12top2 {
+  width: 100%;
+  height: 0.22rem;
+  box-sizing: border-box;
+  padding-left: 0.15rem;
+  line-height: 0.22rem;
+  color: #8f8f8f;
+  font-size: 12px;
+}
+
+.fu .fu1 .fu12 .fu12bot {
+  width: 100%;
+  height: 1.40rem;
+  padding-top: 0.17rem;
+  padding-left: 0.1rem;
+  box-sizing: border-box;
+}
+
+.fu .fu1 .fu12 .fu12bot p {
+  width: 100%;
+  font-size: 12px;
+  color: #5d5d5d;
+}
+
+.fu .fu1 .fu12 .fu12di1 {
+  width: 2.3rem;
+  height: auto;
+  float: left;
+  font-size: 12px;
+}
+
+.fu .fu1 .fu12 .fu12di1 .zuo {
+  width: 100%;
+  height: 0.4rem;
+  box-sizing: border-box;
+  padding-top: 0.18rem;
+  padding-left: 0.1rem;
+  line-height: 0.22rem;
+  color: #8f8f8f;
+}
+
+.fu .fu1 .fu12 .fu12di1 .zishu {
+  width: 100%;
+  height: 0.3rem;
+  box-sizing: border-box;
+  padding-left: 0.1rem;
+  line-height: 0.3rem;
+  color: #8f8f8f;
+}
+
+.fu .fu1 .fu12 .fu12di1 .xing {
+  width: 100%;
+  height: 0.4rem;
+}
+
+.fu .fu1 .fu12 .fu12di1 .xing img {
+  width: 100%;
+}
+
+.fu .fu1 .fu12 .fu12di2 {
+  width: 2rem;
+  height: 1.1rem;
+  padding-top: 0.5rem;
+  padding-left: 0.6rem;
+  box-sizing: border-box;
+  color: #fff;
+  line-height: 0.6rem;
+  font-size: 10px;
+  background: url(../img/c5/b3_10.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+}
+
+.fu .fu2 {
+  width: 100%;
+  height: 0.15rem;
+  background: #e0e0e0;
+}
+
+.jianpan {
+  width: 100%;
+  height: 4.3rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.jianpan img {
+  width: 100%;
+}

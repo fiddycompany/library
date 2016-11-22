@@ -1,0 +1,414 @@
+@charset "UTF-8";
+/*去掉标签的默认样式*/
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box;
+  position: relative;
+}
+
+img {
+  border: none;
+}
+
+/*内宽*/
+/*图片路径*/
+/*调试块*/
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+/*建盒子*/
+/*正方形*/
+/*圆*/
+/*图片居中*/
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  html {
+    font-size: 50.66667px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
+}
+
+/*tou1 */
+#top {
+  width: 100%;
+  height: 1.4rem;
+  background: #29a6dc;
+  position: relative;
+}
+
+#top .baolist {
+  width: 5.72rem;
+  height: 0.8rem;
+  background: #2a3441;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.48rem;
+  border-radius: 0.4rem;
+}
+
+#top .baolist li {
+  width: 33.3333%;
+  height: 100%;
+  float: left;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+#top .baolist li .bk {
+  width: 1.66rem;
+  height: 0.66rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+#top .baolist li .bk span:nth-of-type(1) {
+  display: block;
+  font-size: 0.24rem;
+}
+
+#top .baolist li .bk span:nth-of-type(2) {
+  font-size: 0.14rem;
+  opacity: 0.7;
+  display: block;
+  margin-top: -0.04rem;
+  color: #fff;
+}
+
+#top .baolist li .bian {
+  width: 0.05rem;
+  height: 0.59rem;
+  position: absolute;
+  right: -0.04rem;
+  top: 0.13rem;
+}
+
+#top .baolist li .bian .topyuan {
+  width: 0.06rem;
+  height: 0.06rem;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -0.02rem;
+  border-radius: 50%;
+}
+
+#top .baolist li .bian .middle {
+  width: 0.02rem;
+  height: 0.53rem;
+  background: #fff;
+  position: absolute;
+  top: 0.02rem;
+  left: 0rem;
+}
+
+#top .baolist li .bian .bottomyuan {
+  width: 0.06rem;
+  height: 0.06rem;
+  background: #fff;
+  position: absolute;
+  left: -0.02rem;
+  border-radius: 50%;
+  bottom: 0;
+}
+
+#top .baolist li .blue {
+  background: #29a6dc;
+  border: 0.02rem solid #fff;
+}
+
+#top .baolist li .blue .yuan {
+  width: 0.03rem;
+  height: 0.03rem;
+  position: absolute;
+  top: 0.2rem;
+  background: #fff;
+}
+
+#top .baolist li .blue .yuan:nth-of-type(1) {
+  left: 0.32rem;
+}
+
+#top .baolist li .blue .yuan:nth-of-type(2) {
+  right: 0.32rem;
+}
+
+#top .baolist li .blue .yuan:nth-of-type(3) {
+  right: 0.26rem;
+}
+
+#top .sou {
+  width: 0.46rem;
+  height: 0.46rem;
+  position: absolute;
+  top: 0.68rem;
+  right: 0.21rem;
+  background: url("../img/c1/b_06.png") no-repeat;
+  background-size: cover;
+}
+
+/*banner */
+.ban {
+  width: 100%;
+  height: 4.8rem;
+  background: green;
+  overflow: hidden;
+  background: url("../img/c1/c1_07.png") no-repeat;
+  background-size: cover;
+  box-shadow: 0px 1px 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.dian {
+  width: 100%;
+  height: 0.26rem;
+}
+
+.dian ul {
+  width: 0.5rem;
+  height: 0.1rem;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.dian ul li {
+  width: 0.1rem;
+  height: 0.1rem;
+  border-radius: 50%;
+  background: #0094fb;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.dian ul li:nth-of-type(1) {
+  left: 0;
+}
+
+.dian ul li:nth-of-type(2) {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.dian ul li:nth-of-type(3) {
+  right: 0;
+}
+
+.newtop {
+  width: 100%;
+  height: 0.89rem;
+  padding: 0 0.38rem;
+  box-sizing: border-box;
+}
+
+.newtop .title {
+  width: 1.95rem;
+  height: 0.53rem;
+  overflow: hidden;
+  background: url("../img/c1/c1_11.png") no-repeat;
+  background-size: cover;
+}
+
+.bot1 {
+  width: 100%;
+  height: 3.75rem;
+  box-sizing: border-box;
+  margin-bottom: 0.4rem;
+}
+
+.bot1 .bot11 {
+  position: absolute;
+  width: 1.8rem;
+  height: 100%;
+}
+
+.bot1 .bot11 .bot11tu1 {
+  width: 100%;
+  height: 2.57rem;
+  background: url("../img/c1/c1_15.png") no-repeat;
+  background-size: cover;
+}
+
+.bot1 .bot11 .bot11tu2 {
+  width: 100%;
+  height: 2.57rem;
+  background: url("../img/c1/c1_19.png") no-repeat;
+  background-size: cover;
+}
+
+.bot1 .bot11 p {
+  width: 100%;
+  font-size: 0.22rem;
+}
+
+.bot1 .bot11 p:nth-of-type(1) {
+  color: #3D3D3D;
+}
+
+.bot1 .bot11 .p2 {
+  color: #3D3D3D;
+}
+
+.bot1 .bot11 p:nth-of-type(3) {
+  color: #b0b0b0;
+}
+
+.bot1 .bot11 .p3 {
+  color: #b0b0b0;
+}
+
+.bot1 .bot11:nth-of-type(1) {
+  left: 0.5rem;
+}
+
+.bot1 .bot11:nth-of-type(2) {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.bot1 .bot11:nth-of-type(3) {
+  right: 0.5rem;
+}
+
+.bot2 {
+  width: 100%;
+  height: 1rem;
+}
+
+/*wei*/
+#footer {
+  width: 100%;
+  height: 1rem;
+  background: #151c2b;
+  position: fixed;
+  bottom: 0;
+  left:0;
+}
+
+#footer .list-icon {
+  width: 33.333333%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  color: #646567;
+}
+
+#footer .list-icon .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.4rem;
+  display: block;
+  margin: auto;
+  margin-top: 0.1rem;
+}
+
+#footer .list-icon .zi {
+  font-size: 0.24rem;
+}
+
+#footer .selected-di {
+  color: #fff;
+}

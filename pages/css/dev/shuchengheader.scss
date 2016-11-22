@@ -1,0 +1,339 @@
+
+.scheader{
+    width: 7.5rem;
+    height: 1rem;
+    background: #29a6dc;
+    position: fixed;
+    top: 0;
+    left: 0;
+//精选
+    .sczhong{
+        width: 5.7rem;
+        height: 0.7rem;
+        background: #2a3441;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 30px;
+        #sclis{
+            width:1.9rem ;
+            height: 0.5rem;
+            margin-top: 0.1rem;
+            box-sizing: border-box;
+            float: left;
+            .scdian{
+                width: 0.04rem;
+                height: 0.04rem;
+                background: white;
+                border-radius: 50%;
+            }
+        }
+        #sclis:nth-child(1){
+            border-right: 1px solid #FFFFFF;
+            .scdian:nth-child(1){
+                position: absolute;
+                right: -0.02rem;
+                top: -0.02rem;
+            }
+            .scdian:nth-child(2){
+                position: absolute;
+                right: -0.02rem;
+                bottom: -0.02rem;
+            }
+        }
+        #sclis:nth-child(2){
+            border-right: 1px solid #FFFFFF;
+            text-align: center;
+            line-height: 0.25rem;
+            .scdian:nth-child(1){
+                position: absolute;
+                right: -0.02rem;
+                top: -0.02rem;
+            }
+            .scdian:nth-child(2){
+                position: absolute;
+                right: -0.02rem;
+                bottom: -0.02rem;
+            }
+            a{
+                font-size: 15px;
+                color: white;
+                
+            }
+            p{
+                font-size: 10px;
+                color: #29a6dc;
+            }
+        }
+        #sclis:nth-child(3){
+            text-align: center;
+            line-height: 0.25rem;
+            a{
+                font-size: 15px;
+                color: white;
+                
+            }
+            p{
+                font-size: 10px;
+                color: #29a6dc;
+            }
+        }
+        #scjing{
+                width: 1.5rem;
+                height:0.7rem;
+                margin-top: 0.025rem;
+                margin-left: 0.2rem;
+                background: url(../images/shucheng/c1.png);
+                background-size: 1.5rem 0.65rem;
+                background-repeat: no-repeat;
+            }
+    }
+//榜单
+.sczhong{
+        width: 5.7rem;
+        height: 0.7rem;
+        background: #2a3441;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 30px;
+        #sclis2{
+            width:1.9rem ;
+            height: 0.5rem;
+            margin-top: 0.1rem;
+            box-sizing: border-box;
+            float: left;
+            .scdian{
+                width: 0.04rem;
+                height: 0.04rem;
+                background: white;
+                border-radius: 50%;
+            }
+        }
+        #sclis2:nth-child(1){
+            border-right: 1px solid #FFFFFF;
+            text-align: center;
+            line-height: 0.25rem;
+            .scdian:nth-child(1){
+                position: absolute;
+                right: -0.02rem;
+                top: -0.02rem;
+            }
+            .scdian:nth-child(2){
+                position: absolute;
+                right: -0.02rem;
+                bottom: -0.02rem;
+            }
+            a{
+                font-size: 15px;
+                color: white;
+                
+            }
+            p{
+                font-size: 10px;
+                color: #29a6dc;
+            }
+        }
+        #sclis2:nth-child(2){
+            border-right: 1px solid #FFFFFF;
+            .scdian:nth-child(1){
+                position: absolute;
+                right: -0.02rem;
+                top: -0.02rem;
+            }
+            .scdian:nth-child(2){
+                position: absolute;
+                right: -0.02rem;
+                bottom: -0.02rem;
+            }
+            
+        }
+        #sclis2:nth-child(3){
+            text-align: center;
+            line-height: 0.25rem;
+            a{
+                font-size: 15px;
+                color: white;
+                
+            }
+            p{
+                font-size: 10px;
+                color: #29a6dc;
+            }
+        }
+        #scjing2{
+                width: 1.5rem;
+                height:0.7rem;
+                margin-top: 0.025rem;
+                margin-left: 2.1rem;
+                background: url(../images/shucheng/c5.png);
+                background-size: 1.5rem 0.65rem;
+                background-repeat: no-repeat;
+            }
+        }
+//分类
+.sczhong{
+        width: 5.7rem;
+        height: 0.7rem;
+        background: #2a3441;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 30px;
+        #sclis3{
+            width:1.9rem ;
+            height: 0.5rem;
+            margin-top: 0.1rem;
+            box-sizing: border-box;
+            float: left;
+            .scdian{
+                width: 0.04rem;
+                height: 0.04rem;
+                background: white;
+                border-radius: 50%;
+            }
+        }
+        #sclis3:nth-child(1){
+            border-right: 1px solid #FFFFFF;
+            text-align: center;
+            line-height: 0.25rem;
+            .scdian:nth-child(1){
+                position: absolute;
+                right: -0.02rem;
+                top: -0.02rem;
+            }
+            .scdian:nth-child(2){
+                position: absolute;
+                right: -0.02rem;
+                bottom: -0.02rem;
+            }
+            a{
+                font-size: 15px;
+                color: white;
+                
+            }
+            p{
+                font-size: 10px;
+                color: #29a6dc;
+            }
+        }
+        #sclis3:nth-child(2){
+            border-right: 1px solid #FFFFFF;
+             text-align: center;
+            line-height: 0.25rem;
+            .scdian:nth-child(1){
+                position: absolute;
+                right: -0.02rem;
+                top: -0.02rem;
+            }
+            .scdian:nth-child(2){
+                position: absolute;
+                right: -0.02rem;
+                bottom: -0.02rem;
+            }
+            a{
+                font-size: 15px;
+                color: white;
+                
+            }
+            p{
+                font-size: 10px;
+                color: #29a6dc;
+            }
+        }
+        #sclis3:nth-child(3){
+           
+        }
+        #scjing3{
+                width: 1.5rem;
+                height:0.7rem;
+                margin-top: 0.025rem;
+                margin-left: 4rem;
+                background: url(../images/shucheng/c4.png);
+                background-size: 1.5rem 0.65rem;
+                background-repeat: no-repeat;
+            }
+        }
+}
+.sjbotton{
+    width: 7.5rem;
+    height: 1.1rem;
+    border: 1px solid #ccc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    li{
+        float: left;
+        width: 33.3%;
+        height: 100%;
+    }
+    .img{
+           width: 35px;
+           height:35px;
+           background: blue;
+           position: absolute;
+           margin: auto;
+           left: 0;
+           right: 0;
+        }
+    li:nth-child(1){
+        background: #111723;
+        border-right: 2px solid #CCCCCC;
+        box-sizing: border-box;           
+        text-align: center;
+        font-size: 10px;
+        color: #383C45;
+        line-height: 1.7rem;
+        .img{
+            background:url(../images/shucheng/c2.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    li:nth-child(2){
+        background: #151C2B;
+        border-right: 2px solid #CCCCCC;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 10px;
+        color: white;
+        line-height: 1.7rem;
+        .img{
+            background:url(../images/shucheng/c3.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    li:nth-child(3){
+        background: #151C2B;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 10px;
+        color: #383C45;
+        line-height: 1.7rem;
+        .img{
+            background:url(../images/shujia/b13.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+.img{
+    width: 0.7rem;
+    height: 0.7rem;
+    background: red;
+    float: right;
+    margin-top: 0.15rem;
+    margin-right: 0.1rem;
+    background: url(../images/shujia/b5.png);
+    background-size: 100% 100%;
+}

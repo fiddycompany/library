@@ -1,0 +1,269 @@
+@import "../../css/dev/base.scss";
+$color:#29a6dc;
+.C5header{
+    width:100%;
+    height:1.4rem;
+    position: relative;
+    background:$color;
+    .return{
+        width: 0.52rem;
+        height: 0.51rem;
+        position: absolute;
+        background-image:url('../img/c5/b2_03.png');
+        background-size:cover ;
+        bottom: 0.2rem;
+        left: 0.25rem;
+        display: block;
+        z-index: 100;
+    }
+    .yuyin{
+        width: 0.5rem;
+        height: 0.5rem;
+        background-image:url('../img/c4/b_06.png');
+        background-size:contain ;
+        position: absolute;
+        right: 0.38rem;
+        bottom: 0.2rem;
+    }
+    .tip{
+        position: absolute;
+        @include left-right;
+        color:#fff;
+        font-size: 0.36rem;
+        text-align: center;
+        @include top-bottom;
+        p:nth-of-type(1){
+            margin-top: 0.5rem;
+        }
+        .hx{
+            width: 0.34rem;
+            height: 0.03rem;
+            background-image:url('../img/c5/c5_1.jpg');
+            background-size:contain ;
+              @include left-right;
+             margin-top: 0.02rem;
+        }
+         p:nth-of-type(3){
+            margin-top:0.06rem;
+            font-size:0.18rem;
+            color: #a3e3ff;
+            
+        }
+    }
+}
+
+//头部
+.C5nav{
+    width: 100%;
+    height: 1.1rem;
+    position: relative;
+    background: #f2f2f2;
+    .navIn{
+        width: 5.71rem;
+        height: 0.84rem;
+        @include left-right;
+        @include top-bottom;
+        background-image:url(../img/c5/c1_03.png);
+        background-size:contain ;
+        margin-top: 0.25rem;
+        .sx1{
+           width: 0.03rem;
+           height: 0.59rem; 
+           z-index: 1000;
+           @include top-bottom;
+           left: 33.34%;
+        }
+        .sx2{
+           width: 0.03rem;
+           height: 0.59rem; 
+           z-index: 1100;
+           @include top-bottom;
+           left: 66.67%;
+        }
+        .list{
+            width: 33.33%;
+            height: 100%;
+            float: left;
+            position: relative;
+            .boxbg{
+                width: 1.65rem;
+                height: 0.7rem;
+                @include left-right;
+                @include top-bottom;
+              
+                background-size:contain ;
+                p:nth-of-type(1){
+                     @include left-right;
+                     font-size: 0.24rem;
+                     color:#fff;
+                     
+                      text-align: center;
+                      margin-top: 0.13rem;
+                }
+                 p:nth-of-type(2){
+                     width: 100%;
+                     @include left-right;
+                     font-size: 0.12rem;
+                     color:#bddbe8;
+                     @include left-right;
+                     text-align: center;
+                     white-space: nowrap;
+                     margin-top: 0.4rem;
+                     transform: scale(0.6);
+                     
+                }
+            }
+            
+        }
+        .list:nth-child(2){
+            .boxbg{
+                  background-image:url(../img/c5/c_03.png);
+                 p:nth-of-type(2){
+                     margin-left: -0.2rem;
+                 }
+                 
+            }
+        }
+    }
+}
+   //  <!--周榜-->
+//.zhou{
+//  width: 100%;
+//  height: 1.2rem;
+//  background: #f2f2f2;
+//  .zhoubox{
+//      width: 5.75rem;
+//      height: 0.86rem;
+//      position: absolute;
+//      @include top-bottom;
+//      @include left-right;
+//      background: #666;
+//      background: url(../img/c5/c1_03.png);
+//      background-size: contain;
+//      background-repeat: no-repeat;
+//      .zhoubox2{
+//          width: 1.7rem;
+//          height: 0.71rem;
+//          position: absolute;
+//          @include top-bottom;
+//          @include left-right;
+//          background: url(../img/c5/c_03.png);
+//          background-size: contain;
+//          background-repeat: no-repeat;
+//      }
+//  }
+//}
+.fu{
+    width: 100%;
+    height: 3.87rem;
+    .fu1{
+       width: 100%;
+       height: 3.72rem;
+       .fu11{
+            width: 2.97rem;
+            height: 100%;
+            float: left;
+            .fu11tu{
+                width: 2.46rem;
+                height: 3.5rem;
+                position: absolute;
+                @include top-bottom;
+                @include left-right;
+                background: url('../img/c5/b3_07.png') no-repeat;
+                background-size:cover;
+            }
+       }
+       .fu12{
+           width: 4.53rem;
+           height: 100%;
+           float: left;
+           .fu12top{
+               width: 100%;
+               height: 0.68rem;
+               box-sizing: border-box;
+               padding-top: 0.25rem;
+               line-height: 0.43rem;
+               color: #292929;
+           }
+           .fu12top2{
+               width: 100%;
+               height: 0.22rem;
+               box-sizing: border-box;
+               padding-left: 0.15rem;
+               line-height: 0.22rem;
+               color: #8f8f8f;
+               font-size: 12px;
+           }
+           .fu12bot{
+               width: 100%;
+               height: 1.40rem;
+               padding-top: 0.17rem;
+               padding-left: 0.1rem;
+               box-sizing: border-box;
+               p{
+                   width: 100%;
+                   font-size: 12px;
+                   color: #5d5d5d;
+               }
+           }
+           .fu12di1{
+               width: 2.3rem;
+               height: auto;
+               float: left;
+               font-size: 12px;
+               .zuo{
+                   width: 100%;
+                   height: 0.4rem;
+                   box-sizing: border-box;
+                   padding-top: 0.18rem;
+                   padding-left: 0.1rem;
+                   line-height: 0.22rem;
+                   color: #8f8f8f;
+               }
+               .zishu{
+                   width: 100%;
+                   height: 0.3rem;
+                   box-sizing: border-box;
+                   padding-left: 0.1rem;
+                   line-height: 0.3rem;
+                   color: #8f8f8f;
+               } 
+               .xing{
+                   width: 100%;
+                   height: 0.4rem;
+                   background: url('../img/c5/c5.jpg') no-repeat;
+                   background-size:cover;
+               }              
+           }
+           .fu12di2{
+               width: 2rem;
+               height: 1.1rem;
+               padding-top: 0.5rem;
+               padding-left: 0.6rem;
+               box-sizing: border-box;
+               color: #fff;
+               line-height: 0.6rem;
+               font-size: 10px;
+               background: url(../img/c5/b3_10.png);
+               background-position: left bottom;
+               background-repeat: no-repeat;
+               background-size: contain;
+               float: left;
+           }
+       } 
+    }
+    .fu2{
+       width: 100%;
+       height: 0.15rem; 
+       background: #e0e0e0;
+    }
+}
+.jianpan{
+    width: 100%;
+    height: 4.3rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url('../img/c5/b2_29.png') no-repeat;
+    background-size:cover;
+}

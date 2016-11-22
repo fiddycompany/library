@@ -1,0 +1,303 @@
+@import "../../css/dev/base.scss";
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+a{color: #fff;}
+#top{
+    width:100%;
+    height:1.4rem;
+    background:#29a6dc;
+    position:relative;
+    .baolist{
+        width:5.72rem;
+        height:0.8rem;
+        background:#2a3441;
+        margin:auto;
+        position:absolute;
+        left:0;
+        right:0;
+        top:0.48rem;
+        border-radius: 0.4rem;
+        li{
+            width:33.3333%;
+            height:100%;
+            float:left;
+//          background: red;
+            position:relative;
+            color:#fff;
+//          line-height:0.6rem;
+            text-align: center;
+            font-size:14px;
+//          border-radius: 0.4rem;
+          .bk{
+             width:1.66rem;
+             height: 0.66rem;
+//           background:blue;
+             border-radius: 0.4rem;
+             position:absolute;
+             top:0;
+             left:0;
+             bottom:0;
+             right:0;
+             margin:auto; 
+            
+             span:nth-of-type(1){
+                 display:block;
+                 font-size:0.24rem;
+             }
+             span:nth-of-type(2){
+                 font-size:0.14rem;
+                 opacity:0.7;
+                 display: block;
+                 margin-top:-0.04rem;
+                 color:#fff;
+                 
+             } 
+             
+          }
+          .bian{
+              width:0.05rem;
+              height:0.59rem;
+              position: absolute;
+//            background: red;
+              right:-0.04rem;
+              top:0.13rem;
+              .topyuan{
+                  width:0.06rem;
+                  height:0.06rem;
+                  background: #fff;
+                  position: absolute;
+                  top:0;
+                  left:-0.02rem;
+                  border-radius: 50%;
+              }
+              .middle{
+                  width:0.02rem;
+                  height:0.53rem;
+                  background: #fff;
+                  position:absolute;
+                  top:0.02rem;
+                  left:0rem;
+              }
+              .bottomyuan{
+                  width:0.06rem;
+                  height:0.06rem;
+                  background: #fff;
+                  position: absolute;
+                  left:-0.02rem;
+                  border-radius: 50%;
+                  bottom:0;
+              }
+              
+          }
+          .blue{
+              background:#29a6dc;
+              border:0.02rem solid #fff;
+              .yuan{
+                 width:0.03rem;
+                 height:0.03rem;
+                 position: absolute;
+                 top:0.2rem;
+                 
+                 background: #fff;
+             }
+             .yuan:nth-of-type(1){
+                 left:0.32rem;
+             }
+             .yuan:nth-of-type(2){
+                 right:0.32rem;
+             }
+             .yuan:nth-of-type(3){
+                 right:0.26rem;
+             }
+          }
+        }
+    }
+    .sou{
+        width: 0.46rem;
+        height: 0.46rem;
+        position: absolute;
+        top: 0.68rem;
+        right: 0.21rem;
+        background: url('../img/c1/b_06.png') no-repeat;
+        background-size: cover;
+    }
+}
+//<!--第二页-->
+.xinbox{
+    width: 100%;
+    height: 2.87rem;        
+    .xinbox1{
+        width: 100%;
+        height: 2.70rem;
+        background: url(../img/c2/c11.png) no-repeat;
+        background-size: contain;
+        
+        .xinbox11{
+            width: 3.5rem;
+            height: 100%;
+            padding-left: 0.48rem;
+            padding-top: 0.48rem;
+            box-sizing: border-box;
+            float: left;
+            opacity: 0.6;
+            .xinbox11-1{
+                width: 100%;
+                height: 0.45rem;
+                text-align: center;
+                line-height: 0.45rem;
+                color: #fff;
+            }
+            .xinbox11-2{
+                width: 100%;
+                height: 0.1rem;              
+                line-height: 0.1rem;
+                color: #fff;
+                font-size: 9px;
+            }
+            .xinbox11-3{
+                width: 100%;
+                height: 0.4rem;
+                .xinbox11-31{
+                    width: 0.28rem;
+                    height: 0.26rem;
+                    position: absolute;
+                    @include top-bottom;
+                    @include left-right;
+                    background: url('../img/c2/c7.png') no-repeat;
+                    background-size:cover;
+                }
+            }
+            .xinbox11-4{
+                width: 100%;
+                height: 0.3rem;
+                text-align: center;
+                line-height: 0.3rem;
+                color: #fff;
+                font-size: 12px;
+            }            
+        }
+        .xinbox12{
+            width: 4rem;
+            height: 100%;
+            padding-top: 0.6rem;
+            box-sizing: border-box;
+            float: left;
+            opacity: 0.6;
+            .xinbox12-1{
+                width: 100%;
+                height: 0.45rem;
+                padding-left: 0.43rem;
+                box-sizing: border-box;
+                .xinbox12-11{
+                    width: 0.64rem;
+                    height: 0.26rem;
+                    float: left;
+                    @include top-bottom;
+                    background: url(../img/c2/c6.png) no-repeat;
+                    background-size: contain;
+                }
+                .xinbox12-12{
+                    float: left;
+                    line-height: 0.4rem;
+                    color: #fff;
+                    position: absolute;
+                    left: 1.1rem;
+                    font-size: 13px;
+                }                
+            }
+            .xinbox12-2{
+                width: 100%;
+                height: 0.45rem;
+                padding-left: 0.28rem;
+                box-sizing: border-box;
+                .xinbox12-21{
+                    width: 0.82rem;
+                    height: 0.37rem;
+                    float: left;
+                    @include top-bottom;
+                    background: url(../img/c2/c8.png) no-repeat;
+                    background-size: contain;
+                }
+                .xinbox12-22{
+                    float: left;
+                    line-height: 0.45rem;
+                    color: #fff;
+                    position: absolute;
+                    left: 1.15rem;
+                    font-size: 13px;
+                }
+            }
+            .xinbox12-3{
+                width: 100%;
+                height: 0.45rem;
+                padding-left: 0.5rem;
+                box-sizing: border-box;
+                .xinbox12-31{
+                    width: 0.55rem;
+                    height: 0.24rem;
+                    float: left;
+                    @include top-bottom;
+                    background: url(../img/c2/c9.png) no-repeat;
+                    background-size: contain;
+                }
+                .xinbox12-32{
+                    float: left;
+                    line-height: 0.45rem;
+                    color: #fff;
+                    position: absolute;
+                    left: 1.1rem;
+                    font-size: 13px;
+                }
+            }
+        }           
+    }
+    .xinbox2{
+        width: 100%;
+        height: 0.17rem;
+        background: #dedede;
+    }
+}
+.xinbox:nth-of-type(4){
+    margin-bottom: 0.17rem;
+}
+.bot2{
+    width: 100%;
+    height: 1rem;
+}
+/*wei*/
+#footer{
+    width:100%;
+    height: 1rem;
+    background: #151c2b;
+    position: fixed;
+    bottom:0;
+    .list-icon{
+        width:33.333333%;
+        height:100%;
+        float:left;
+//      background: red;
+        text-align: center;
+        position: relative;
+        color:#646567;
+        .iconfont{
+            font-family: 'iconfont'!important;
+            font-size:0.4rem;
+            display: block;
+            margin:auto;
+            margin-top:0.1rem;
+        }
+        .zi{ 
+            font-size:0.24rem;
+        }
+    }
+    .selected-di{
+         color:#fff;
+    }
+    
+}

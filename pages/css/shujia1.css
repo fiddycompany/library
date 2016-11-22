@@ -1,0 +1,348 @@
+@charset "UTF-8";
+/*去掉标签的默认样式*/
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #fff; }
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box;
+  position: relative; }
+
+img {
+  border: none; }
+
+/*内宽*/
+/*图片路径*/
+/*调试块*/
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+/*建盒子*/
+/*正方形*/
+/*圆*/
+/*图片居中*/
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 380px) {
+  html {
+    font-size: 50.66667px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+.big-box{
+	position:fixed;
+	top:1rem;
+	bottom:1.2rem;
+	overflow:auto;
+}
+.header {
+  width: 100%;
+  height: 1rem;
+  background: #29a6dc;
+  position: relative; }
+  .header .title {
+    width: 50%;
+    height: 1rem;
+    margin: 0 auto;
+    position: relative; }
+    .header .title span {
+      color: #D1E8F5;
+      font-size: 18px;
+      position: absolute;
+      top: 0rem;
+      left: 1rem; }
+    .header .title img {
+      position: absolute;
+      top: 0.45rem;
+      left: 1.35rem; }
+    .header .title p {
+      color: #84D2F5;
+      font-size: 12px;
+      position: absolute;
+      top: 0.6rem;
+      left: 0.76rem; }
+
+.header_R {
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.15rem;
+  background: url(../images/shujia/b5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.nav_bot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 1.2rem;
+  width: 100%; }
+  .nav_bot ul {
+    width: 100%;
+    height: 100%;
+    background: #151C2B; }
+    .nav_bot ul li {
+      float: left;
+      width: 33.3%;
+      height: 1.2rem;
+      position: relative; }
+      .nav_bot ul li img {
+        width: 0.6rem;
+        height: 0.6rem;
+        margin-left: 0.9rem;
+        margin-top: 0.1rem; }
+      .nav_bot ul li span {
+        color: #676869;
+        font-size: 14px;
+        position: absolute;
+        left: 0.9rem;
+        top: 0.7rem; }
+    .nav_bot ul .sel {
+      background-image: url(../images/shujia/sel-bg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+      .nav_bot ul .sel span {
+        color: #fff; }
+
+.banner {
+  width: 100%;
+  height: 3.5rem;
+  overflow: hidden; }
+  .banner .imgBox {
+    width: 90%;
+    height: 3.5rem;
+    margin: 0.4rem auto;
+    box-shadow: 0,0,10px #666666; }
+    .banner .imgBox img {
+      width: 100%;
+      height: 100%; }
+  .banner ul {
+    width: auto;
+    height: 0.3rem;
+    position: absolute;
+    left: 3rem;
+    top: 4.6rem; }
+    .banner ul li {
+      width: 0.1rem;
+      height: 0.1rem;
+      border-radius: 50%;
+      border: 1px solid #29A6DC;
+      margin-left: 0.2rem;
+      margin-top: 0.15rem;
+      float: left; }
+    .banner ul .blue {
+      background: #29A6DC; }
+
+.new {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem; }
+  .new .newTitle {
+    height: 1rem;
+    padding-left: 0.4rem;
+    position: relative; }
+    .new .newTitle .i1 {
+      width: 0.4rem;
+      height: 0.4rem;
+      position: absolute;
+      left: 0.4rem;
+      top: 0.05rem; }
+    .new .newTitle p {
+      font-size: 18px;
+      color: #000;
+      position: absolute;
+      left: 0.95rem;
+      top: 0; }
+    .new .newTitle span {
+      font-size: 12px;
+      color: #666;
+      position: absolute;
+      left: 0.95rem;
+      top: 0.4rem; }
+    .new .newTitle .i2 {
+      width: 0.6rem;
+      height: 0.3rem;
+      position: absolute;
+      left: 2.4rem;
+      top: 0.3rem; }
+  .new .bookList {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    .new .bookList li {
+      width: 2.3rem;
+      height: 3.2rem;
+      float: left;
+      margin-left: 0.2rem;
+      margin-top: 0.1rem;
+      background-image: url(../images/shujia/tu.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative; }
+      .new .bookList li p {
+        padding-left: 0.1rem;
+        font-size: 15px;
+        color: #666;
+        position: absolute;
+        left: 0.3rem;
+        top: 2.3rem; }
+      .new .bookList li span {
+        padding-left: 0.1rem;
+        color: #999;
+        font-size: 12px;
+        position: absolute;
+        left: 0.3rem;
+        top: 2.7rem; }
+
+.rece {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem; }
+  .rece .newTitle {
+    height: 1rem;
+    padding-left: 0.4rem;
+    position: relative; }
+    .rece .newTitle .i1 {
+      width: 0.4rem;
+      height: 0.4rem;
+      position: absolute;
+      left: 0.4rem;
+      top: 0.05rem; }
+    .rece .newTitle p {
+      font-size: 18px;
+      color: #000;
+      position: absolute;
+      left: 0.95rem;
+      top: 0; }
+    .rece .newTitle span {
+      font-size: 12px;
+      color: #666;
+      position: absolute;
+      left: 0.95rem;
+      top: 0.4rem; }
+    .rece .newTitle .i2 {
+      width: 0.6rem;
+      height: 0.3rem;
+      position: absolute;
+      left: 2.4rem;
+      top: 0.25rem; }
+  .rece .bookList {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    .rece .bookList li {
+      width: 95%;
+      height: 3rem;
+      float: left;
+      margin-left: 0.2rem;
+      margin-top: 0.1rem;
+      background-image: url(../images/shujia/bg4.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative; }
+      .rece .bookList li .p1 {
+        font-size: 15px;
+        color: #333;
+        position: absolute;
+        left: 1.8rem;
+        top: 0.2rem; }
+      .rece .bookList li .p2 {
+        width: 5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        overflow-wrap: hyphenate;
+        color: #999;
+        font-size: 12px;
+        position: absolute;
+        left: 1.8rem;
+        top: 0.6rem; }
+      .rece .bookList li .p3 {
+        width: 5rem;
+        font-size: 14px;
+        color: #666;
+        position: absolute;
+        left: 1.8rem;
+        top: 1.15rem; }
+      .rece .bookList li .p4 {
+        width: 5rem;
+        font-size: 12px;
+        color: #999;
+        position: absolute;
+        left: 1.8rem;
+        top: 1.5rem; }
+      .rece .bookList li span {
+        width: 3.5rem;
+        font-size: 12px;
+        color: #999;
+        position: absolute;
+        left: 1.8rem;
+        top: 2.3rem; }
+        .rece .bookList li span .p5 {
+          font-size: 12px;
+          color: #999;
+          float: left; }
+        .rece .bookList li span .p6 {
+          font-size: 12px;
+          color: #A5DDF5;
+          float: left;
+          margin-top: 0.03rem; }
+        .rece .bookList li span img {
+          margin-top: 0.2rem;
+          margin-left: 0.1rem;
+          width: 2rem;
+          float: left; }
+      .rece .bookList li .p7 {
+        color: #A0D6EE;
+        font-size: 12px;
+        position: absolute;
+        right: 0.5rem;
+        top: 2.27rem; }

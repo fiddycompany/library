@@ -1,0 +1,38 @@
+<div>
+	<style>
+		.title{
+			width:400px;
+			height:400px;
+			border:1px solid red;
+			overflow:hidden;
+			
+	    }
+		.content{
+			width:400px;
+			height:400px;
+		}
+		.content li{
+			width:300px;
+			height:200px;
+			background:blue;
+			float: left;
+			display:none;
+			text-align:center;
+			line-height:200px;
+		}
+		.content li.active{
+			display:block;
+		}
+	</style>
+	<ul class="title">
+		<li ng-class="{active:$index==0}"ng-repeat="v in data ">
+			{{v.t}}
+		</li>
+		
+	</ul>
+	<ul class="content">
+		<li ng-class="{active:$index==0}"ng-repeat="v in data ">
+             {{v.c}}			
+		</li>
+	</ul>
+</div>

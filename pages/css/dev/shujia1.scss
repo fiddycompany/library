@@ -1,0 +1,330 @@
+@import "base.scss";
+.header{
+    width: 100%;
+    height: 1rem;
+    background: #29a6dc;
+    position:relative;
+    .title{
+        width: 50%;
+        height:1rem;
+//      padding: 0.15rem 0;
+        margin: 0 auto;
+        position: relative;
+        span{
+            color:#D1E8F5;
+            font-size: 18px;
+            position: absolute;
+            top:0rem;
+            left:1rem;
+        }
+        img{
+            position: absolute;
+            top:0.45rem;
+            left:1.35rem;
+        }
+        p{
+            color:#84D2F5;
+            font-size: 12px;
+            position: absolute;
+            top:0.6rem;
+            left:0.76rem;
+        }
+    }
+}
+//.header_L{
+//  width: 1.1rem;
+//  height: 1.1rem;
+//  position: absolute;
+//  left:0.2rem;
+//  top:0.2rem;
+//  background:url(../imgs/header/header01.jpg);
+//  background-repeat: no-repeat;
+//  background-position: center;
+//}
+.header_R{
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    right:0.2rem;
+    top:0.15rem;
+    background:url(../images/shujia/b5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.nav_bot{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height:1.2rem;
+    width: 100%;
+    ul{
+        width: 100%;
+        height:100%;
+        background: #151C2B;
+        li{
+            float: left;
+            width: 33.3%;
+            height:1.2rem;
+            position: relative;
+            img{
+                width: 0.6rem;
+                height:0.6rem;
+                margin-left: 0.9rem;
+                margin-top: 0.1rem;
+            }
+            span{
+                color:#676869;
+                font-size: 14px;
+                position: absolute;
+                left:0.9rem;
+                top:0.7rem;
+            }
+        }
+        .sel{
+            background-image: url(../images/shujia/sel-bg.png);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            span{
+                color:#fff;
+            }
+        }
+    }
+}
+.banner{
+    width:100%;
+    height:3.5rem;
+//  background: #eee;
+    overflow: hidden;
+    .imgBox{
+        width: 90%;
+        height:3.5rem;
+        margin: 0.4rem auto;
+        box-shadow: 0,0,10px #666666;
+        img{
+            width: 100%;
+            height:100%;
+        }
+    }
+    ul{
+        width: auto;
+        height: 0.3rem;
+//      padding-left:3rem;
+//      margin-top: 4rem;
+        position: absolute;
+        left:3rem;
+        top:4.6rem;
+        li{
+            width: 0.1rem;
+            height:0.1rem;
+            border-radius: 50%;
+            border: 1px solid #29A6DC;
+            margin-left: 0.2rem;
+            margin-top: 0.15rem;
+            float: left;
+//          background: #000;
+        }
+        .blue{
+            background: #29A6DC;
+        }
+    }
+}
+.new{
+    width: 100%;
+    height:auto;
+    margin-top:0.5rem;
+    .newTitle{
+//      width: 100%;
+        height:1rem;
+        padding-left: 0.4rem;
+        position: relative;
+    .i1{
+        width: 0.4rem;
+        height:0.4rem;
+        position: absolute;
+        left:0.4rem;
+        top:0.05rem;
+    }
+    p{
+        font-size: 18px;
+        color:#000;
+        position: absolute;
+        left:0.95rem;
+        top:0;
+    }    
+    span{
+        font-size: 12px;
+        color: #666;
+        position: absolute;
+        left:0.95rem;
+        top:0.4rem;
+    }
+    .i2{
+        width: 0.6rem;
+        height:0.3rem;
+        position: absolute;
+        left:2.4rem;
+        top:0.3rem;
+    }   
+    }
+    .bookList{
+        width: 100%;
+        height:auto;
+        overflow: hidden;
+        li{
+            width: 2.3rem;
+            height:3.2rem;
+            float: left;
+            margin-left: 0.2rem;
+            margin-top: 0.1rem;
+//          background: #eee;
+            background-image: url(../images/shujia/tu.png);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            position: relative;
+            p{
+                padding-left:0.1rem;
+//              padding-right: 0.05rem;
+                font-size: 15px;
+                color:#666;
+                position: absolute;
+                left:0.3rem;
+                top:2.3rem;
+            }
+            span{
+                padding-left: 0.1rem;
+                color:#999;
+                font-size: 12px;
+                position: absolute;
+                left:0.3rem;
+                top:2.7rem;
+            }    
+        }
+    }
+}
+.rece{
+    width: 100%;
+    height:auto;
+    margin-top:0.5rem;
+    .newTitle{
+//      width: 100%;
+        height:1rem;
+        padding-left: 0.4rem;
+        position: relative;
+    .i1{
+        width: 0.4rem;
+        height:0.4rem;
+        position: absolute;
+        left:0.4rem;
+        top:0.05rem;
+    }
+    p{
+        font-size: 18px;
+        color:#000;
+        position: absolute;
+        left:0.95rem;
+        top:0;
+    }    
+    span{
+        font-size: 12px;
+        color: #666;
+        position: absolute;
+        left:0.95rem;
+        top:0.4rem;
+    }
+    .i2{
+        width: 0.6rem;
+        height:0.3rem;
+        position: absolute;
+        left:2.4rem;
+        top:0.25rem;
+    }   
+    }
+    .bookList{
+        width: 100%;
+        height:auto;
+        overflow: hidden;
+        li{
+            width: 95%;
+            height:3rem;
+            float: left;
+            margin-left: 0.2rem;
+            margin-top: 0.1rem;
+//          background: #eee;
+            background-image: url(../images/shujia/bg4.png);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            position: relative;
+            .p1{
+//              padding-right: 0.05rem;
+                font-size: 15px;
+                color:#333;
+                position: absolute;
+                left:1.8rem;
+                top:0.2rem;
+            }
+            .p2{
+                width: 5rem;
+                white-space: nowrap;
+                overflow: hidden;
+                overflow-wrap: hyphenate;
+                color:#999;
+                font-size: 12px;
+                position: absolute;
+                left:1.8rem;
+                top:0.6rem;
+            }  
+            .p3{
+                width: 5rem;
+//              padding-right: 0.05rem;
+                font-size: 14px;
+                color:#666;
+                position: absolute;
+                left:1.8rem;
+                top:1.15rem;
+            }  
+            .p4{
+                width: 5rem;
+//              padding-right: 0.05rem;
+                font-size: 12px;
+                color:#999;
+                position: absolute;
+                left:1.8rem;
+                top:1.5rem;
+            }
+            span{
+                width: 3.5rem;
+//              padding-right: 0.05rem;
+                font-size: 12px;
+                color:#999;
+                position: absolute;
+                left:1.8rem;
+                top:2.3rem;
+                .p5{
+                    font-size: 12px;
+                    color:#999;
+                    float: left;
+                }
+                .p6{
+                    font-size: 12px;
+                    color:#A5DDF5;
+                    float: left;
+                    margin-top: 0.03rem;
+                }
+                img{
+                    margin-top: 0.2rem;
+                    margin-left: 0.1rem;
+                    width: 2rem;
+                    float: left;
+                }
+            }
+            .p7{
+                color:#A0D6EE;
+                font-size: 12px;
+                position: absolute;
+                right:0.5rem;
+                top:2.27rem;
+            }
+        }
+    }
+}

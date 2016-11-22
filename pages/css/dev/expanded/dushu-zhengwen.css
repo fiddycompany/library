@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/*去掉标签的默认样式*/
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #fff; }
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box;
+  position: relative; }
+
+img {
+  border: none; }
+
+/*内宽*/
+/*图片路径*/
+/*调试块*/
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+/*建盒子*/
+/*正方形*/
+/*圆*/
+/*图片居中*/
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 380px) {
+  html {
+    font-size: 50.66667px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+body {
+  background: #29a6dc;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.g-main {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 1rem;
+  bottom: 0;
+  margin: auto;
+  background: #fff; }
+
+span {
+  font-size: 0.28rem;
+  font-family: '苹方';
+  color: #333333; }
+
+/*正文*/
+.zhengwen {
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+  .zhengwen .wenzhang {
+    width: 100%;
+    height: 100%;
+    background: #ffe9b0;
+    padding-left: 0.45rem;
+    padding-right: 0.45rem; }
+    .zhengwen .wenzhang .title {
+      width: 100%;
+      height: auto;
+      line-height: 3; }
+      .zhengwen .wenzhang .title p {
+        font-weight: 600;
+        font-size: 0.3rem;
+        font-family: '苹方'; }
+    .zhengwen .wenzhang .wenzhang-inner {
+      width: 100%;
+      height: auto;
+      line-height: 1.5; }
+      .zhengwen .wenzhang .wenzhang-inner p {
+        font-size: 0.24rem; }
+
+.gengduo {
+  width: 100%;
+  height: 2.2rem;
+  background: #151c2b;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  .gengduo .gengduo-top {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.4rem;
+    padding: 0 0.2rem; }
+    .gengduo .gengduo-top .prev, .gengduo .gengduo-top .next {
+      width: 1.16rem;
+      height: 0.4rem;
+      float: left;
+      line-height: 0.4rem;
+      font-size: 0.24rem;
+      color: #989898;
+      text-align: center; }
+    .gengduo .gengduo-top .next {
+      float: right; }
+    .gengduo .gengduo-top .progress {
+      width: 4.67rem;
+      height: 0.12rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 0.2rem;
+      background: #d5d5d5; }
+      .gengduo .gengduo-top .progress :before {
+        content: '';
+        display: block;
+        width: 0.24rem;
+        height: 0.24rem;
+        border-radius: 50%; }
+  .gengduo .gengduo-bottom {
+    width: 100%;
+    padding: 0 0.85rem;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0.2rem; }
+    .gengduo .gengduo-bottom > div {
+      width: 0.6rem;
+      height: auto;
+      overflow: hidden; }
+      .gengduo .gengduo-bottom > div div {
+        width: 0.57rem;
+        height: 0.57rem;
+        border-radius: 50%;
+        background: #29a6dc;
+        margin: 0 auto; }
+      .gengduo .gengduo-bottom > div p {
+        margin: 0.1rem auto 0;
+        font-size: 0.28rem;
+        color: #e6e6e6;
+        font-family: '苹方';
+        font-weight: 600; }
+    .gengduo .gengduo-bottom .mulu-box {
+      float: left; }
+    .gengduo .gengduo-bottom .shezhi-box {
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute; }
+    .gengduo .gengduo-bottom .liangdu-box {
+      float: right; }
+
+/*目录*/
+.g-cata {
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+  .g-cata li {
+    width: 100%;
+    height: 0.9rem;
+    border-bottom: 1px dashed #999;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem; }
+    .g-cata li span {
+      padding-right: 0.2rem; }
+    .g-cata li .g-cata-list-left {
+      height: 100%;
+      padding-left: 0.25rem;
+      float: left;
+      line-height: 0.9rem; }
+    .g-cata li .g-cata-list-right {
+      height: 100%;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      float: right;
+      line-height: 0.9rem; }
+      .g-cata li .g-cata-list-right .yixiazai {
+        color: #333333; }
+      .g-cata li .g-cata-list-right .weixiazai {
+        color: #989898; }
+
+li.g-cata-list.active span {
+  color: #357fe4; }

@@ -1,0 +1,27 @@
+app.config(['$routeProvider',function($routeProvider){
+	$routeProvider.when('/wodexinxi',{
+		templateUrl:'pages/Myinfo/Myinfo.html',
+		controller:'indexCtrl'
+	}).when('/setting',{
+		templateUrl:'pages/Myinfo/Myinfo_1.html',
+		controller:'settingCtrl'
+	}).when('/pianhao',{
+		templateUrl:'pages/Myinfo/Myinfo_3.html',
+		controller:'myCtrl'
+	}).when('/info',{
+		templateUrl:'pages/Myinfo/Myinfo_9.html',
+		controller:'myCtrl'
+	}).when('/system',{
+		templateUrl:'pages/Myinfo/Myinfo_6.html',
+		controller:'myCtrl'
+	}).when('/Myinfo',{
+		templateUrl:'pages/Myinfo/Myinfo_5.html',
+		controller:'myCtrl'
+	}).when('/yijian',{
+		templateUrl:'pages/Myinfo/Myinfo_7.html',
+		controller:'myCtrl'
+	}).when('/shuoming',{
+		templateUrl:'pages/Myinfo/Myinfo_8.html',
+		controller:'myCtrl'
+	})
+}])

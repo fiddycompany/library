@@ -1,0 +1,793 @@
+@import 'base';
+$images-path: '../images/dushu/';
+
+$bg-lan : #29a6dc;
+@mixin  t-b-f($t, $b){
+    position:fixed;
+    top: $t;
+    bottom: $b;
+    margin:auto;
+}
+@mixin font-28{
+    font-size: 0.28rem;
+    font-family: '苹方';
+}
+//body{
+//  width: 100%;
+//  background: $bg-lan;
+//  @include t-b-f(0, 0);
+//}
+.g-main{
+    @include box1(100%, auto);
+    @include t-b-f(1rem, 0);
+    background: #fff;
+}
+@mixin dushu($w, $h){
+    @include box1($w, $h);
+    background: $geng-hei;
+    box-shadow: 0 0 0.2rem #b2b2b2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+@mixin font-24($we){
+    font-size: 0.24rem;
+    font-family: '苹方';
+    font-weight: $we;
+    color: #f0f0f0;
+}
+$geng-hei: #151c2b;
+//读书部分 底部色块
+
+$zi-hui: #333333;//深灰字
+$zi-xuan: #357fe4;//选中蓝
+$zi-qian-hui: #989898;//浅灰字
+$wen-bg: #ffe9b0;
+span{
+    @include font-28;
+    color: $zi-hui;
+}
+.tiao{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+}
+
+/*头部1*/
+.g-header{
+    
+    background: $bg-lan;
+    @include box1(100%, 1rem);
+    .g-header-1, .g-header-2{
+        @include box1(100%, 100%);
+        .g-header-a{
+            @include box1(0.5rem, 0.5rem);
+            @include top-bottom;
+            background: url($images-path + 'fan.png') no-repeat center;
+            background-size: cover;
+        }
+        .g-header-a:first-child{
+            left: 0.2rem;
+        }
+        .g-header-a:nth-of-type(2){
+            background: url($images-path + 'e34.png') no-repeat center;
+            background-size: cover;
+            right: 1rem;
+        }
+        .g-header-a:last-child{
+            background: url($images-path + 'e2.png') no-repeat center;
+            background-size: cover;
+            right: 0.2rem;
+        }
+        .g-header-b{
+            @include box1(5.8rem, 0.96rem);
+            @include center;
+            background-image: url($images-path + 'hd.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            .g-b-lis{
+                @include box1(1.93rem, 100%);
+                float: left;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 1.66rem, 0.7rem;
+                .g-b-zhong{
+                    @include box1(100%, 0.24rem);
+                    margin: 0.25rem auto 0;
+                    @include font-24(500);
+                    color: #fff;
+                    text-align: center;
+                    line-height: 0.24rem;
+                }
+                .g-b-ying{
+                     @include box1(100%, 0.24rem);
+                     font-size: 0.16rem;
+                     font-family: '苹方';
+                     text-align: center;
+                     color: #fff;
+                }
+            }
+            .g-b-lis:nth-of-type(2){
+                left: 0.1rem;
+            }
+            .g-b-lis.active{
+                background-image: url($images-path + 'g-b.png');
+            }
+        }
+    }
+}
+.g-header-1{
+    display: none;
+}
+.g-header-1.active{
+    display: block;
+}
+
+/*正文*/
+.zhengwen{
+    @include box1(100%, 100%);
+    overflow: auto;
+    .wenzhang{
+        @include box1(100%, 100%);
+        //background: $wen-bg;
+        padding-left: 0.45rem;
+        padding-right: 0.45rem;
+        position: absolute;
+        top: 0;
+        overflow: auto;
+        .title{
+            @include box1(100%, auto);
+            line-height: 3;
+            p{
+            font-weight: 600;
+            font-size: 0.3rem;
+            font-family: '苹方';
+            }
+        }
+        .wenzhang-inner{
+            @include box1(100%, auto);
+            line-height: 1.5;
+            p{
+                font-size: 0.24rem;
+            }
+        }
+        .shuming{
+            display: none;
+        }
+        .jindu{
+            display: none;
+        }
+    }
+}
+
+.wenzhang.quanping{
+    @include t-b-f(0, 0);
+    .shuming{
+        display: block;
+        
+        @include box1(100%, 0.42rem);
+        .shuming-name{
+            margin-left: 0.23rem;
+            padding: 0 0.05rem;
+            //background: #ffe7a7;
+            float: left;
+            font-size: 0.18rem;
+            color: #7b6c55;
+            font-family: '苹方';
+            line-height: 0.42rem;
+        }
+        .changxian{
+            width: 100%;
+            height: 0.02rem;
+            background: #a1946e;
+            @include top-bottom;
+            z-index: -1;
+        }
+    }
+    
+    .jindu{
+        display: block;
+        
+        @include box1(auto, 0.75rem);
+        position: fixed;
+        bottom: 0;
+        left: 0.5rem;
+        right: 0.5rem;
+        .jindu-left, .jindu-right{
+            height: 0.75rem;
+            line-height: 0.75rem;
+            @include font-24(600);
+            color: #363028;
+            float: left;
+        }
+        .jindu-right{
+            float: right;
+        }
+    }
+}
+
+/*搜索 标注框*/
+.sou-box{
+    display: none;
+    
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -0.1rem;
+        left: 50%;
+        @include box1(0.18rem, 0.12rem);
+       background: url($images-path + 'san.png');
+       background-size: cover;
+       background-position: center;
+        
+    }
+    @include box1(4.1rem, 0.46rem);
+    background: #272727;
+    border-radius: 0.05rem;
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+    z-index: 10;
+    .sou-lis{
+        width: 0.82rem;
+        font-size: 0.18rem;
+        color: #f3f3f3;
+        line-height: 0.46rem;
+        text-align: center;
+        float: left;
+    }
+    .sou-lis:not(:last-child){
+        border-right: 0.02rem solid #202020;
+    }
+}
+.sou-box:nth-of-type(2){
+    top: 6rem;
+}
+
+.g-liang.active{
+    display: block;
+}
+/*亮度调节*/
+.g-liang{
+    display: none;
+    
+    @include dushu(100%, 1.86rem);
+    padding: 0.18rem 0.24rem;
+    .g-liang-a{
+        @include box1(100%, auto);
+        padding: 0.22rem 0;
+        //overflow: hidden;
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        & > div{
+            height: 0.30rem;
+            float: left;
+        }
+        .progress-box{
+            width: 4.67rem;
+        }
+        .g-liang-zi{
+            @include box1(0.64rem, 0.30rem)
+            line-height: 0.30rem;
+            text-align: center;
+            
+            @include font-24(500);
+        }
+        .g-liang-xi{
+            @include box1(0.72rem, 0.31rem);
+            border: 0.02rem solid #f0f0f0;
+            border-radius: 0.05rem;
+            font-size: 0.16rem;
+            color: #f0f0f0;
+            text-align: center;
+            line-height: 0.31rem;
+            
+        }
+        .g-liang-a-in{
+            padding: 0 0.18rem;
+            float: left;
+            @include font-24(500);
+            color: #999;
+            .icon{
+                display: inline-block;
+                @include yuan(0.22rem);
+                background: #fff;
+                padding-right: 0.18rem;
+                &:before{
+                    content: '';
+                    display: block;
+                    @include yuan(0.10rem);
+                    @include center;
+                    margin: auto;
+                    background: #7d7d7d;
+                }
+            }
+        }
+        .g-liang-a-in:last-child{
+            float: right;
+        }
+        .g-liang-a-in.active{
+            color: #fff;
+            .icon{
+                &:before{
+                    background: #ffd235;
+                }
+            }
+        }
+    }
+}
+
+.set-font.active{
+    display: block;
+}
+/*设置字体*/
+.set-font{
+    display: none;
+    
+    @include dushu(100%, 2.8rem);
+    padding-left: 0.22rem;
+    .set-font-a{
+        @include box1(100%, auto);
+        //overflow: hidden;
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        & > div{
+            height: 0.64rem;
+            float: left;
+        }
+        .set-font-a-zi{
+            padding-left: 0.2rem;
+            padding-right: 0.15rem;
+            
+            line-height: 0.64rem;
+            @include font-24(600);
+        }
+        .progress-box{
+            width: 4.67rem;
+        }
+        .set-font-a-icon{
+            width: 0.32rem;
+            margin: 0 0.15rem;
+            line-height: 0.64rem;
+            @include font-24(600);
+        }
+        .set-font-a-icon:nth-of-type(2){
+            background-image: url($images-path + 'e28.png');
+            background-repeat: no-repeat;
+            background-size: 0.28rem;
+            background-position: center;
+        }
+        
+        .set-font-a-kuai{
+            height: auto;
+            margin-top: 0.2rem;
+            padding-left: 0.15rem;
+        }
+    }
+    .set-font-a:nth-of-type(2) .set-font-a-icon:nth-of-type(2){
+        background-image: url($images-path + 'e29.png');
+    }
+}
+
+.set-bg.active:before{
+        content: '';
+        display: block;
+         @include box1(0.62rem, 0.62rem);
+         border: 0.04rem solid #41e441;
+         border-radius: 0.05rem;
+         margin-top: -0.03rem;
+         margin-left: -0.04rem;
+         box-sizing: border-box;
+    }
+.set-bg{
+    @include box1(0.55rem, 0.55rem);
+    margin-right: 0.18rem;
+    float: left;
+    background: #fff;
+    p{
+        width: 0.7rem;
+        position: absolute;
+        left: 50%;
+        bottom: -0.3rem;
+        margin-left: -0.35rem;
+        text-align: center;
+        font-size: 0.14rem;
+        color: #fff;
+    }
+}
+$bg-color: (
+    'yangpi': #fcf3db,//纯色羊皮
+    'jingdian1': #ffe9b0,//经典1
+    'jingdian2': #d8a764,//经典2
+    'lan': #3876ac,//蓝色图腾
+    'mei': #21858e,//美丽星空
+    'shao': #f4c5d4,//少女情怀
+    'yangyan': #79d143 //养颜绿色
+);
+@each $v in map-keys($bg-color){
+    .set-bg.#{$v}, .wenzhang.#{$v}, .wenzhang.#{$v} .shuming-name{
+        background: map-get($bg-color, $v);
+    }
+}
+
+
+/*更多功能*/
+.gengduo.active{
+    display: block;
+}
+.gengduo{
+    display: none;
+    
+    @include dushu(100%, 2.20rem);
+    
+    .gengduo-top{
+        width: 100%;
+        overflow: hidden;
+        margin-top: 0.4rem;
+        padding: 0 0.2rem;
+        .prev, .next{
+            @include box1(1.16rem, 0.4rem);
+            float: left;
+            line-height: 0.4rem;
+            font-size: 0.24rem;
+            color: $zi-qian-hui;
+            text-align: center;
+        }
+        .next{
+            float: right;
+        }
+        
+    }
+    .gengduo-bottom{
+        width: 100%;
+        padding: 0 0.85rem;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0.2rem;
+        & > div{
+            @include box1(0.6rem, auto);
+            overflow: hidden;
+            div{
+                @include yuan(0.57rem);
+                background: $bg-lan;
+                margin: 0 auto;
+                background-size:cover ;
+                background-position: center;
+            }
+            .mulu{
+                background-image: url($images-path + 'e22.png');
+            }
+            .shezhi{
+                background-image: url($images-path + 'e24.png');
+            }
+            .liangdu{
+                background-image: url($images-path + 'e23.png');
+            }
+            p{
+                margin: 0.1rem auto 0;
+                font-size: 0.28rem;
+                color: #e6e6e6;
+                font-family: '苹方';
+                font-weight: 600;
+            }
+        }
+        .mulu-box{
+            float: left;
+        }
+        .shezhi-box{
+            @include left-right;
+        }
+        .liangdu-box{
+            float: right;
+        }
+    }
+}
+
+.progress{
+    @include box1(4.67rem, 0.12rem);
+    @include center;
+    border-radius: 0.2rem;
+    background: #d5d5d5;
+    .progress-i{
+        @include box1(2rem, 100%);
+        border-top-left-radius: 0.2rem;
+        border-bottom-left-radius: 0.2rem;
+        background:#1db24b url($images-path + 'e21.png');
+        background-size: cover;
+        background-position: center;
+        background-size: 4.67rem 120%;
+        background-position: left center;
+        &:before{
+            content: '';
+            display: block;
+            @include yuan(0.24rem);
+            background: url($images-path + 'e20.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: -0.06rem;
+            right: -0.12rem;
+        }
+    }
+    
+}
+
+/*目录*/
+.g-cata{
+//  display: none;
+    
+    @include box1(100%, 100%);
+    overflow: auto;
+    li{
+        @include box1(100%, 0.9rem);
+        border-bottom: 1px dashed #999;
+            padding: {
+            left: 0.15rem;
+            right: 0.15rem;
+        }
+        span{
+            padding-right: 0.2rem;
+        }
+        .g-cata-list-left{
+            height: 100%;
+            padding-left: 0.25rem;
+            float: left;
+            line-height: 0.9rem;
+        }
+        .g-cata-list-right{
+            height: 100%;
+            padding: {
+                left: 0.25rem;
+                right: 0.25rem;
+            }
+            float: right;
+            line-height: 0.9rem;
+            .yixiazai{
+                color: $zi-hui;
+            }
+            .weixiazai{
+                color: $zi-qian-hui;
+            }
+        }
+    }
+}
+li.g-cata-list.active  span{
+    color: $zi-xuan;
+}
+
+
+/*笔记列表*/
+.g-node, .g-shu{
+//  display: none;
+    
+    @include box1(100%, 100%);
+    overflow: auto;
+    .g-count{
+        @include box1(100%, 0.48rem);
+        background: #e5e5e5;
+        font-size: 0.20rem;
+        line-height: 0.48rem;
+        text-align: center;
+        color: #a8a8a8;
+        
+    }
+    .g-node-inner{
+        @include box1(100%, auto);
+        position: absolute;
+        top: 0.48rem;
+        bottom: 0;
+        li.g-node-list:not(:first-child){
+            border-bottom: 0.01rem dashed $geng-hei;
+        }
+        li.g-node-list{
+            padding-left: 0.24rem;
+            overflow: hidden;
+            .g-node-list-left{
+                @include box1(0.8rem, 100%);
+                float: left;
+                .g-node-list-icon{
+                    @include box1(0.8rem, 0.8rem);
+                    @include center;
+                    background: url( $images-path + 'e8.png') no-repeat;
+                    background-size: cover;
+                }
+            }
+            .g-node-list-right{
+                padding-left: 0.24rem;
+                padding-top: 0.1rem;
+                float: left;
+                .g-node-list-title{
+                    @include box1(4.5rem, 0.3rem);
+                    @include font-24(600);
+                    line-height: 0.3rem;
+                    color: $geng-hei;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: clip;
+                }
+                .g-node-list-inner{
+                    @include box1(4.5rem, 0.24rem);
+                    line-height: 0.24rem;
+                    font-size: 0.16rem;
+                    color: #666;
+                    font-family: '苹方';
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .g-node-list-miaoshu{
+                    height: 0.9rem;
+                    padding-left: 0.32rem;
+                    .bi-icon{
+                        @include box1(0.25rem, 0.25rem);
+                        background: url($images-path + 'e9.png') no-repeat center;
+                        background-size: cover;
+                       @include top-bottom;
+                       left: 0;
+                        top: -0.6rem;
+                    }
+                    p{
+                        @include box1(3.7rem, 0.3rem);
+                        line-height: 0.3rem;
+                        font-size: 0.2rem;
+                        color: #ec2e56;
+                        font-family: '苹方';
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    p:nth-last-child{
+                        text-overflow: clip;
+                    }
+                }
+            }
+        }
+    }
+}
+.g-node li.g-node-list{
+    @include box1(100%, 1.8rem);
+}
+
+.g-shu li.g-node-list{
+     @include box1(100%, 1.16rem);
+     border-bottom: 0.01rem dashed $geng-hei;
+}
+
+.g-node-list-xinxi{
+    @include box1(5.4rem, 0.3rem);
+    .g-node-list-xinxi-left{
+        height: 0.2rem;
+        float: left;
+        .biao, .yan{
+            height: 0.2rem;
+            padding-left: 0.30rem;
+            padding-right: 0.15rem;
+            float: left;
+            line-height: 0.2rem;
+            
+            font-size: 0.16rem;
+            color: $zi-hui;
+            i.icon{
+                display: block;
+                font-style: normal;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                @include box1(0.2rem, 0.2rem);
+                
+                position: absolute;
+                left: 0;
+            }
+        }
+        .biao{
+            i.icon{
+                background-image: url($images-path + 'e17.png');
+            }
+            
+        }
+        .yan{
+            padding-left: 0.40rem;
+            i.icon{
+                width: 0.3rem;
+                background-image: url($images-path + 'e18.png');
+            }
+        }
+    }
+}
+.g-node li.g-node-list.bianji{
+    .g-node-list-right .g-node-list-miaoshu{
+        padding-left: 0.55rem;
+        padding-top: 0.15rem;
+        background: url($images-path + 'e30.png');
+        background-size: cover;
+        .bi-icon{
+            top: -0.3rem;
+            left: 0.24rem;
+        }
+    }
+}
+.g-node .g-node-inner li.g-node-list.active{
+    border-bottom: 0.01rem solid #29dcbc;
+    .g-node-list-bj{
+        @include box1(100%, 1.81rem);
+        top: 0.01rem;
+        background: url($images-path + 'e31.png');
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .cha{
+            @include box1(0.3rem, 0.3rem);
+            background: url($images-path + 'e32.png') no-repeat center;
+            background-size: cover;
+            @include top-bottom;
+            right: 0.5rem;
+        }
+    }
+    .g-node-list-left{
+        display: none;
+    }
+    .g-node-list-right{
+        .g-node-list-title,
+        .g-node-list-inner,
+        .g-node-list-xinxi .g-node-list-xinxi-left div{
+            color: #fff;
+        }
+        .g-node-list-miaoshu p{
+            color: #1d9563;
+        }
+    } 
+}
+
+.g-chakan-quanbu{
+    @include box1(100%, 1.28rem);
+    background: $geng-hei;
+    position: fixed;
+    bottom: 0;
+    .g-chakan-quanbu-in{
+        @include box1(1.4rem, 0.5rem);
+        border-radius: 0.5rem;
+        background: #fff;
+        @include center;
+        font-size: 0.20rem;
+        line-height: 0.5rem;
+        color: $zi-qian-hui;
+        text-align: center;
+        &:after, &:before{
+            content: '';
+            display: block;
+            @include yuan(0.06rem);
+            @include top-bottom;
+            background: $zi-qian-hui;
+        }
+        &:after{
+            left: 0.09rem;
+        }
+        &:before{
+            right: 0.09rem;
+        }
+    }
+}
+
+
+/*活动*/
+.g-huodong{
+    display: none;
+    
+    @include t-b-f(0, 0);
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9) url($images-path + 'e26.png') no-repeat center;
+}

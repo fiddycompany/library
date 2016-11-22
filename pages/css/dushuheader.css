@@ -1,0 +1,33 @@
+.duheader {
+  width: 7.5rem;
+  height: 1.1rem;
+  background: #29a6dc;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .duheader .duleft {
+    float: left;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    background: url(../images/shujia/b16.png);
+    background-size: 0.6rem 0.7rem;
+    background-repeat: no-repeat; }
+  .duheader .duright {
+    float: right;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.3rem;
+    margin-top: 0.2rem;
+    background: url(../images/dushu/e2.png);
+    background-size: 0.75rem 0.8rem; }
+  .duheader .dusou {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 1.4rem;
+    background: url(../images/dushu/e1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
